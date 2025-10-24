@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Fiado - Padaria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sistema de Fiado - Padaria</h1>
+
+  <section id="cadastro">
+    <h2>Cadastrar Cliente</h2>
+    <input type="text" id="nome" placeholder="Nome completo">
+    <input type="text" id="cpf" placeholder="CPF">
+    <input type="number" id="valor" placeholder="Valor da compra">
+    <input type="date" id="dataCompra">
+    <button id="btnCadastrar">Cadastrar</button>
+  </section>
+
+  <section id="busca">
+    <h2>Buscar Cliente</h2>
+    <input type="text" id="buscaNome" placeholder="Buscar por nome">
+    <button id="btnBuscar">Buscar</button>
+    <ul id="listaClientes"></ul>
+  </section>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
