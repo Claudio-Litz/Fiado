@@ -23,3 +23,11 @@ The goal is to simplify the process of recording purchases, tracking pending pay
 ---
 
 ## 📂 Project Structure
+
+fiado-padaria/
+│
+├── index.html # Main interface
+├── style.css # Stylesheet
+├── script.js # App logic (CRUD + calculations)
+├── firebase-config.js # Firebase connection setup
+└── README.md
