@@ -1,27 +1,19 @@
-npm install firebase
+// firebase-config.js
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
 
-
-
-
-
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Configuração do Firebase (a sua)
 const firebaseConfig = {
   apiKey: "AIzaSyCMtSX15hXNoswu3lYv9nbA3qpectufCXk",
   authDomain: "fiado-padaria.firebaseapp.com",
   projectId: "fiado-padaria",
   storageBucket: "fiado-padaria.firebasestorage.app",
   messagingSenderId: "264543302065",
-  appId: "1:264543302065:web:55fae38d4e15d504abcd90",
-  measurementId: "G-J2V7H7S9L7"
+  appId: "1:264543302065:web:55fae38d4e15d504abcd90"
 };
 
-// Initialize Firebase
+// Inicializa o Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const db = getFirestore(app);
+
+export { db };
